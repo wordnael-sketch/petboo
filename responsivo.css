@@ -1,0 +1,93 @@
+/* ===== Pet Boo · ajustes de responsividade (celular, tablet, iPad) =====
+   Carregado depois de styles.css em todas as páginas (o build insere o <link>). */
+
+/* âncoras não ficam escondidas atrás do cabeçalho fixo */
+section[id]{scroll-margin-top:88px}
+
+/* ---------- menu hambúrguer (até 1040px) ---------- */
+.menu-btn{display:none}
+@media (max-width:1040px){
+  .nav{position:relative;gap:10px}
+  .nav > .btn-wa{margin-left:auto}
+  .menu-btn{display:grid;place-content:center;gap:5px;width:46px;height:46px;flex:none;border:2.5px solid var(--plum);border-radius:14px;background:#fff;cursor:pointer}
+  .menu-btn span{display:block;width:20px;height:2.5px;border-radius:2px;background:var(--plum);transition:transform .2s,opacity .2s}
+  header.aberto .menu-btn{background:var(--plum)}
+  header.aberto .menu-btn span{background:#fff}
+  header.aberto .menu-btn span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+  header.aberto .menu-btn span:nth-child(2){opacity:0}
+  header.aberto .menu-btn span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+  .links{display:none;position:absolute;top:calc(100% + 3px);left:-16px;right:-16px;flex-direction:column;gap:0;
+    background:var(--paper);border-bottom:3px solid var(--plum);padding:6px 16px 14px;box-shadow:0 18px 30px -18px rgba(65,24,63,.45);
+    max-height:calc(100vh - 110px);overflow-y:auto;font-size:1.08rem}
+  header.aberto .links{display:flex}
+  .links a{padding:14px 4px;border-bottom:1.5px solid var(--line)}
+  .links a:last-child{border-bottom:0}
+  .links a.ativo{color:var(--red)}
+  .menu-aberto .fab{display:none}
+}
+/* celular estreito: WhatsApp do topo vira só o ícone */
+@media (max-width:420px){
+  .brand img{width:48px;height:48px}
+  .brand .wm{font-size:1.35rem}
+  .brand small{font-size:.74rem}
+  .nav > .btn-wa{font-size:0;gap:0;width:46px;height:46px;padding:0;justify-content:center}
+  .nav > .btn-wa svg{width:22px;height:22px}
+}
+
+/* ---------- alvos de toque (mín. ~44px) ---------- */
+.btn-sm{min-height:44px}
+.more,.card p a,.crumb a,.social a,.prod .ig,dd a,footer p a{display:inline-block;padding-block:10px}
+.legal button,footer button[data-open]{padding-block:12px!important}
+.tab{min-height:44px}
+.prod .art .tag2,.prod .art .cb{font-size:.76rem}
+
+/* ---------- tablet / iPad em pé (700–860px): hero em 2 colunas ---------- */
+@media (min-width:700px) and (max-width:860px){
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:24px}
+  .hero-art{width:min(100%,340px);margin-top:0}
+  .badge.b1{left:-4%}.badge.b2{right:-4%}
+}
+
+/* ---------- grades sem card sobrando (tablet até notebook pequeno) ---------- */
+@media (min-width:600px) and (max-width:1100px){
+  .cards{grid-template-columns:1fr 1fr}
+  .breed{grid-template-columns:repeat(6,1fr)}
+  .breed div{grid-column:span 2}
+  .breed div:nth-child(4),.breed div:nth-child(5){grid-column:span 3}
+}
+
+/* ---------- vitrine: abas com indicação de rolagem ---------- */
+@media (max-width:1040px){
+  .tabs{scroll-snap-type:x proximity;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 48px),transparent);padding-right:48px}
+  .tab{scroll-snap-align:start}
+}
+
+/* ---------- celular: vitrine mais compacta ---------- */
+@media (max-width:600px){
+  .page-hero{padding:22px 0 6px}
+  .page-hero h1{font-size:2.2rem;margin:6px 0 8px}
+  .page-hero p{font-size:1rem}
+  .page-hero .ctas{margin-top:14px}
+  .page-hero .ctas .btn-red{display:none}          /* os produtos já estão logo abaixo */
+  .page-hero .ctas .btn{padding:10px 18px;font-size:.92rem;min-height:44px}
+}
+@media (max-width:560px){
+  .grid{gap:12px}
+  .prod:not(.ask){display:grid;grid-template-columns:38% 1fr;align-items:start;border-radius:18px}
+  .prod:not(.ask) .art{border-radius:0;align-self:start;aspect-ratio:1/1}
+  .prod:not(.ask) .art .cb{display:none}
+  .prod:not(.ask) .art .tag2{top:8px;left:8px;padding:2px 8px}
+  .prod .body{padding:12px 14px 14px;gap:3px}
+  .prod h3{font-size:1.15rem}
+  .prod p{font-size:.86rem;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex:0}
+  .prod .opts{margin:4px 0 2px}
+  .prod .ig{padding-block:8px}
+  .prod .btn{min-height:44px;padding:10px 12px;font-size:.88rem}
+}
+
+/* ---------- botão flutuante e rodapé no celular ---------- */
+@media (max-width:600px){
+  .fab{width:54px;height:54px;right:12px;bottom:12px}
+  .fab svg{width:28px;height:28px}
+  footer{padding-bottom:84px}
+}

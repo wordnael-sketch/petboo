@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produtos | Pet Boo - Pet Shop em Águas Claras - DF</title>
+<meta name="description" content="Vitrine da Pet Boo: rações super premium, antipulgas, petiscos, camas, peitorais e roupinhas. Consulte o preço pelo WhatsApp e retire na loja em Águas Claras.">
+<!-- DEMO: remover a linha abaixo quando o site for aprovado e publicado no domínio oficial -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Pet Boo | Boutique e Carinho">
+<meta property="og:description" content="Banho e tosa, rações e acessórios em Águas Claras. Cashback de até 10%. Desde 2011.">
+<meta name="theme-color" content="#df0621">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Chewy ≈ letreiro "PET BOO" (arredondado, saltitante) · Quicksand ≈ "boutique e carinho" (arredondada, traço leve) -->
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="demo"><b>Proposta de site</b> · versão de demonstração para a Pet Boo</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="Pet Boo, início">
+      <img src="/logo.webp" alt="Logo Pet Boo" width="58" height="58">
+      <span class="wm">Pet Boo<small>boutique e carinho</small></span>
+    </a>
+    <nav class="links">
+      <a href="/">Início</a>
+      <a href="/#servicos">Serviços</a>
+      <a href="/produtos" class="ativo">Produtos</a>
+      <a href="/#tosa">Tosa de raça</a>
+      <a href="/#clube">Clube</a>
+      <a href="/#agendar">Agendar</a>
+      <a href="/#visite">Como chegar</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" data-wa="Olá, Pet Boo! Vim pelo site." href="#" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Início</a> › Produtos</p>
+    <h1>A vitrine da <span class="r">Pet Boo</span></h1>
+    <p>Rações, antipulgas, petiscos, camas e acessórios que você encontra na loja. As fotos vêm direto do nosso Instagram. Escolha, consulte o preço do dia pelo WhatsApp e retire em Águas Claras.</p>
+    <div class="ctas">
+      <a class="btn btn-red" href="#vitrine">Ver produtos</a>
+      <a class="btn btn-ghost" href="#novidades">Últimas novidades</a>
+    </div>
+  </div>
+</section>
+
+<!-- VITRINE: dados em /vitrine.json, fotos em /img/produtos/ (baixadas dos posts do Instagram no build) -->
+<section id="vitrine" style="padding-top:20px">
+  <div class="wrap">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="grid" id="grid" role="tabpanel"></div>
+    <p class="note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+      Fotos dos nossos posts no Instagram. Preços e estoque mudam com frequência, por isso confirmamos tudo pelo WhatsApp. Clientes cadastrados têm preços especiais e acumulam cashback. Antipulgas e carrapaticidas: consulte sempre o veterinário do seu pet.</p>
+  </div>
+</section>
+
+<!-- NOVIDADES DO INSTAGRAM -->
+<section id="novidades" style="padding-top:10px">
+  <div class="wrap">
+    <div class="gal-head">
+      <div class="head">
+        <span class="kicker">ofertas no instagram</span>
+        <h2>Últimas novidades da loja</h2>
+        <p>Direto do nosso Instagram. Gostou? Confirme preço e estoque pelo WhatsApp.</p>
+      </div>
+      <div class="arrows" data-for="produtos">
+        <button type="button" data-dir="-1" aria-label="Ofertas anteriores"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" data-dir="1" aria-label="Próximas ofertas"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="track" data-ig="produtos"></div>
+    <p class="follow"><a class="btn btn-ghost" href="https://www.instagram.com/petboodf/" target="_blank" rel="noopener">Siga @petboodf no Instagram</a></p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div><h2>Cliente cadastrado paga menos</h2><p>Entre no Clube Pet Boo: preços especiais, até 10% de cashback e ofertas no seu WhatsApp.</p></div>
+      <a class="btn btn-cream" href="/#clube">Quero entrar no Clube</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a href="/" class="brand"><img src="/logo.webp" alt="" width="58" height="58"><span class="wm">Pet Boo<small>boutique e carinho</small></span></a>
+    <div class="social">
+      <a href="https://www.instagram.com/petboodf/" target="_blank" rel="noopener">Instagram @petboodf</a>
+      <a data-wa="Olá, Pet Boo!" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p style="width:100%;font-size:.86rem;opacity:.75"><a href="/#clube" style="margin-right:12px;text-decoration:underline">Clube e privacidade</a>© <span id="y"></span> Pet Boo · Pet Shop em Águas Claras, Brasília - DF. Desde 2011.</p>
+  </div>
+</footer>
+
+<a class="fab" data-wa="Olá, Pet Boo! Vim pelo site." href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script>
+const WA = "5561982373132";
+const waLink = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const $ = id => document.getElementById(id);
+document.querySelectorAll("[data-wa]").forEach(a => a.href = waLink(a.dataset.wa));
+$("y").textContent = new Date().getFullYear();
+</script>
+<script src="/vitrine.js"></script>
+<script src="/ig.js"></script>
+<script src="https://assinatura-leandro.vercel.app/assinatura.js" data-cliente="Pet Boo" defer></script>
+</body>
+</html>

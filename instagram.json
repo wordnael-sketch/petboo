@@ -1,0 +1,60 @@
+{
+  "_leia": "Atualizado pela rotina 'Sincronizar Instagram Pet Boo' (seg e qui). 'pets' = galeria rotativa Nossos aumiguinhos (embaralhada a cada visita). 'produtos' = Ofertas no Instagram (somem após 90 dias, exceto semPreco:true). id = código do post (instagram.com/p/ID/). 'sincronizado_em' = última verificação.",
+  "pets": [
+    {
+      "id": "DTnoJ5rjdQM"
+    },
+    {
+      "id": "CjGTi5jpY65"
+    },
+    {
+      "id": "CiIkAWeMTPV"
+    },
+    {
+      "id": "DTngAW9DZGG"
+    },
+    {
+      "id": "B8W2cATlVKf"
+    },
+    {
+      "id": "CsJ-oWqptKD"
+    },
+    {
+      "id": "BucRIOVnO6e"
+    },
+    {
+      "id": "Cf9iqpKsDkU"
+    },
+    {
+      "id": "B9yUEcOFzqI"
+    },
+    {
+      "id": "B9w8v3eFd-F"
+    },
+    {
+      "id": "BucRV7lHsgI"
+    },
+    {
+      "id": "B4nouivlvwq"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "Dde-9y-lRNu",
+      "data": "2026-09-19",
+      "titulo": "Fórmula Natural Life"
+    },
+    {
+      "id": "DcuDqBioJPM",
+      "data": "2026-08-31",
+      "titulo": "Camas e colchões"
+    },
+    {
+      "id": "DT_CKm2jtQ-",
+      "data": "2026-01-17",
+      "titulo": "Petiscos Spin Pet Fit",
+      "semPreco": true
+    }
+  ],
+  "sincronizado_em": "2026-10-05"
+}
